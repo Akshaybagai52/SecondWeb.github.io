@@ -283,7 +283,7 @@ button.hero__btn:hover {
   z-index: -1;
   position: absolute;
   right: 0;
-  top: 185px;
+  top: 200px;
   border-left: 1px solid transparent;
   border-bottom-right-radius: 100px;
   border-top-right-radius: 100px;
@@ -297,7 +297,7 @@ button.hero__btn:hover {
   z-index: -1;
   position: absolute;
   left: 0;
-  top: 305px;
+  top: 320px;
   border-right: 1px solid transparent;
   border-bottom-left-radius: 100px;
   border-top-left-radius: 100px;
@@ -559,11 +559,15 @@ button.hero__btn:hover {
   display: inline-block;
   padding: 20px 51px;
   border-radius: 4px;
-  box-shadow: 0 0 20px 0 rgba(30, 136, 245, 0.4);
+  transition: 0.3s;
   background-color: #1e88f5;
   border: 0;
   margin: 50px auto;
   text-align: center;
+}
+
+.card__btn:hover {
+  box-shadow: 0 0 20px 0 rgba(30, 136, 245, 0.4);
 }
 
 .card__btn span {
@@ -578,6 +582,10 @@ button.hero__btn:hover {
 
 .yellow__btn {
   background-color: #ffcc01;
+  transition: 0.3s;
+}
+
+.yellow__btn:hover {
   box-shadow: 0 0 20px 0 rgba(254, 203, 1, 0.4);
 }
 
@@ -628,6 +636,27 @@ footer {
   transform: translateY(-50%);
 }
 
+.footer__text {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #0d253e;
+  line-height: 40px;
+  margin-right: 70px;
+}
+
+footer span a {
+  opacity: 0.4;
+  transition: 0.4s;
+}
+
+footer span a:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+  color: #0d253e;
+}
+
 .footer__logo {
   display: inline-block;
   opacity: 0.6;
@@ -639,13 +668,13 @@ footer {
   margin-left: 50px;
 }
 
-.footer__text {
-  opacity: 0.4;
-  display: inline-block;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  color: #0d253e;
-  line-height: 40px;
-  margin-right: 70px;
+.footer__logo a {
+  opacity: 0.6;
+  font-weight: 400;
+}
+
+.footer__logo a:hover {
+  color: #ffcc01;
+  opacity: 1;
+  font-weight: bold;
 }
