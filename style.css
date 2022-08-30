@@ -152,9 +152,9 @@ nav ul li a:hover:after {
 
 .hero__content {
   width: 100%;
-  text-align: center;
   position: absolute;
   top: 50%;
+  text-align: center;
   transform: translateY(-50%);
 }
 
@@ -212,7 +212,7 @@ button.hero__btn:hover {
   margin-top: 75px;
   position: relative;
 }
-/* 
+
 .clearfix:after {
   clear: both;
   height: 0;
@@ -220,6 +220,9 @@ button.hero__btn:hover {
   content: "";
   display: block;
 }
+
+/* 
+
 
 .column__one {
   width: 20%;
@@ -644,6 +647,10 @@ footer {
   color: #0d253e;
   line-height: 40px;
   margin-right: 70px;
+}
+
+.footer__text:nth-child(5) {
+  margin-right: 0;
 }
 
 footer span a {
