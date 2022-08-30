@@ -14,40 +14,42 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="clearfix">
         <label class="logo">YOU DIF</label>
         <ul>
           <li><a href="javascript:void(0)">QUI SOMMES-NOU</a></li>
           <li><a href="javascript:void(0)"> CONTACT</a></li>
 
           <li>
-            <button class="btn__yellow">
+            <!-- <button class="btn__yellow">
               <a href="javascript:void(0)">CONNEXION</a>
-            </button>
+            </button> -->
+            <a role="button" href="javascript:void(0)" class="btn__yellow">CONNEXION</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <section class="hero">
-      <div class="hero__content clearfix">
+      <div class="hero__content">
         <h1 class="hero__description">
           Lorem Ipsum,<br />
           is simply dummy text of the printing.
         </h1>
-        <a href="#"><button class="hero__btn">DIFFUSER MON ANNONC</button></a>
+        <!-- <a href="#"><button class="hero__btn">DIFFUSER MON ANNONC</button></a> -->
+        <a role="button" href="javascript:void(0)" class="hero__btn">DIFFUSER MON ANNONC</a>
       </div>
     </section>
 
-    <section class="container">
-      <div class="top">
+    <section>
+      <div class="top container">
         <h2 class="top__heading">Notre interface tout en un, 100% web</h2>
         <p class="top__description">
           There are many variations of passages of Lorem Ipsum available,<br />
           but the majority have suffered alteration in some form.
         </p>
       </div>
-      <div class="column">
+      <div class="column container">
         <!-- <div class="column__one">
           <p class="one__text">
             Bien disponible
@@ -129,13 +131,11 @@
               Bien disponible
             </h3>
             <div class="circle__blue"
-              ><span class="img__span"
-                ><img
+              ><img
                   class="img__icon"
                   src="https://i.ibb.co/fkHKR2n/buildings-3.png"
                   alt="buildings-2"
-                  border="0"
-              /></span>
+              />
           </div>
           </div>
           <div class="row__one">
@@ -147,13 +147,12 @@
             </p>
 
             <div class="circle__grey"
-              ><span class="img__span"
-                ><img
+              ><img
                   class="img__icon"
                   src="https://i.ibb.co/3zG9HNJ/document-3.png"
                   alt="buildings-2"
                   border="0"
-              /></span>
+              />
           </div>
           </div>
           <div class="row__one">
@@ -165,14 +164,16 @@
             </p>
 
             <div class="circle__grey"
-              ><span class="img__span"
-                ><img
+              ><img
                   class="img__icon"
                   src="https://i.ibb.co/RQnkgWH/check-1.png"
                   alt="buildings-2"
                   border="0"
-              /></span>
-          </div>
+              />
+              <span class="circle__yellow">
+              <img class="plus__icon" src="https://i.ibb.co/37zMmzp/plus-positive-add-mathematical-symbol.png" alt="plus-positive-add-mathematical-symbol" border="0">
+              </span>
+            </div>
           </div>
         </div>
 
@@ -184,12 +185,14 @@
           
   
           <div class="circle__grey circle__two"
-            ><span class="img__span"
-              ><img
+            ><img
                 class="img__icon"
                 src="https://i.ibb.co/4F6QZcT/three-arrows-1.png" alt="three-arrows-1"
                 border="0"
-            /></span>
+            />
+            <span class="circle__yellow">
+                <img class="plus__icon" src="https://i.ibb.co/37zMmzp/plus-positive-add-mathematical-symbol.png" alt="plus-positive-add-mathematical-symbol" border="0">
+                </span>
         </div>
 
           <h3 class="heading">
@@ -203,12 +206,11 @@
           
   
           <div class="circle__grey circle__two"
-            ><span class="img__span"
-              ><img
+            ><img
                 class="img__icon"
                 src="https://i.ibb.co/jgbj9Pt/time.png" alt="time"
                 border="0"
-            /></span>
+            />
         </div>
 
           <h3 class="heading">
@@ -222,12 +224,11 @@
         <div class="row__one"  style="vertical-align:top;">
           
           <div class="circle__blue circle__two"
-            ><span class="img__span"
-              ><img
+            ><img
                 class="img__icon"
                 src="https://i.ibb.co/x8m7tcV/contact.png" alt="contact"
                 border="0"
-            /></span>
+            />
         </div>
 
           <h3 class="text__blue">
@@ -249,8 +250,8 @@
 
       
 
-      <div class="middle">
-        <div class="middle__img">
+      <div class="middle__img">
+        <!-- <div class="middle clearfix">
           <span class="middle__p">
             <p class="middle__description">
               <span style="font-weight: normal;">L’efficacité</span>
@@ -282,9 +283,43 @@
               but the majority have suffered alteration.
             </p>
           </div>
+        </div> -->
+        <div class="middle">
+          <div class="middle__left">
+            <span class="left__description">
+            <h3 class="left__text">
+                L’efficacité au centre <br>
+                de notre préoccupation
+            </h3>
+            <a role="button" href="javascript:void(0)" class="left__btn"><span class="btn__text">DIFFUSER MON ANNONC</span></a>
+          </span>
+          </div>
+
+          <div class="middle__right">
+            <div class="right__description">
+              <p class="right__row">
+                  <span> Simple </span> <br />
+                  There are many variations of passages of Lorem Ipsum available,
+                  but the majority have suffered alteration.
+                </p>
+    
+                <p class="right__row">
+                  <span> Sur-mesure </span> <br />
+                  There are many variations of passages of Lorem Ipsum available,
+                  but the majority have suffered alteration.
+                </p>
+    
+                <p class="right__row">
+                  <span> Performant </span> <br />
+                  There are many variations of passages of Lorem Ipsum available,
+                  but the majority have suffered alteration.
+                </p>
+            </div>
+          </div>
+
         </div>
       </div>
-      <div class="bottom">
+      <div class="bottom container">
         <h3 class="bottom__heading">
           Une totale maîtrise de votre budget
           <p>
@@ -293,7 +328,7 @@
           </p>
         </h3>
 
-        <div class="card__one clearfix">
+        <div class="card__one">
           <p class="card__text">
             <span class="card__heading">SELECTION</span> <br />
             <span class="card__amount"> 5€<span>HT</span> </span>
@@ -315,11 +350,12 @@
               </li>
             </ul>
             <p style="text-align: center;">
-              <button class="card__btn">
+                <a role="button" href="javascript:void(0)" class="card__btn">
+              
                 <span>
                   CHOISIR L’OFFRE SELECTION
                 </span>
-              </button>
+              </a>
             </p>
           </span>
         </div>
@@ -345,11 +381,12 @@
               </li>
             </ul>
             <p style="text-align: center;">
-              <button class="card__btn yellow__btn">
-                <span>
-                  CHOISIR L’OFFRE SELECTION
-                </span>
-              </button>
+                <a role="button" href="javascript:void(0)" class="card__btn yellow__btn">
+              
+                    <span>
+                      CHOISIR L’OFFRE SELECTION
+                    </span>
+                  </a>
             </p>
           </span>
         </div>
@@ -401,18 +438,20 @@
 
 
 
-      <div class="row row__two">
+      <div class="row row__two container">
         <div class="row__one">
           
   
-          <span class="circle__grey circle__two"
-            ><span class="img__span"
-              ><img
+          <div class="circle__grey circle__two"
+            ><img
                 class="img__icon"
                 src="https://i.ibb.co/B4RSrzM/piggy-bank-1.png" alt="piggy-bank-1"
                 border="0"
-            /></span>
-          </span>
+            />
+            <span class="circle__yellow">
+                <img class="plus__icon" src="https://i.ibb.co/37zMmzp/plus-positive-add-mathematical-symbol.png" alt="plus-positive-add-mathematical-symbol" border="0">
+                </span>
+        </div>
 
           <h3 class="heading">
             Économique
@@ -426,14 +465,14 @@ Ipsum available.
         <div class="row__one">
           
   
-          <span class="circle__grey circle__two"
-            ><span class="img__span"
-              ><img
+          <div class="circle__grey circle__two"
+            ><img
                 class="img__icon"
                 src="https://i.ibb.co/xXp8xzP/text-page.png" alt="text-page"
                 border="0"
-            /></span>
-          </span>
+            />
+
+        </div>
 
           <h3 class="heading">
             Maîtrise
@@ -447,14 +486,16 @@ Ipsum available.
   
         <div class="row__one"  style="vertical-align:top;">
           
-          <span class="circle__grey circle__two"
-            ><span class="img__span"
-              ><img
+          <div class="circle__grey circle__two"
+            ><img
                 class="img__icon"
                 src="https://i.ibb.co/cgHWdRV/olives.png" alt="olives"
                 border="0"
-            /></span>
-          </span>
+            />
+            <span class="circle__yellow">
+                <img class="plus__icon" src="https://i.ibb.co/37zMmzp/plus-positive-add-mathematical-symbol.png" alt="plus-positive-add-mathematical-symbol" border="0">
+              </span>
+        </div>
 
           <h3 class="heading">
             Dégressif
@@ -471,25 +512,25 @@ Ipsum available.
     <footer>
       <div class="footer__div">
         <div class="footer__content">
-          <span class="footer__logo"><a href="javascript:void(0)">YOU DIF</a></span>
-          <span class="footer__text"
-            ><a href="javascript:void(0)">QUI SOMMES-NOUS ?</a> <br />
-            <a href="javascript:void(0)">CONTACT</a></span
+          <h3 class="footer__logo"><a href="javascript:void(0)">YOU DIF</a></h3>
+          <ul class="footer__text"
+            ><li><a href="javascript:void(0)">QUI SOMMES-NOUS ?</a></li>
+            <li><a href="javascript:void(0)">CONTACT</a></li>
+          </ul>
+
+          <ul class="footer__text"
+            ><li><a href="javascript:void(0)">CONNEXION</a></li>
+            <li><a href="javascript:void(0)">FAQ</a></li></ul
           >
 
-          <span class="footer__text"
-            ><a href="javascript:void(0)">CONNEXION</a><br />
-            <a href="javascript:void(0)">FAQ</a></span
+          <ul class="footer__text"
+            ><li><a href="javascript:void(0)">RECRUTEMENT</a></li>
+            <li><a href="javascript:void(0)">FOURNISSEUR</a></li></ul
           >
 
-          <span class="footer__text"
-            ><a href="javascript:void(0)">RECRUTEMENT</a><br />
-            <a href="javascript:void(0)">FOURNISSEUR</a></span
-          >
-
-          <span class="footer__text"
-            ><a href="javascript:void(0)">CONFIDENTIALITÉ</a><br />
-            <a href="javascript:void(0)">CGU</a></span
+          <ul class="footer__text"
+            ><li><a href="javascript:void(0)">CONFIDENTIALITÉ</a></li>
+            <li><a href="javascript:void(0)">CGU</a></li></ul
           >
         </div>
       </div>
