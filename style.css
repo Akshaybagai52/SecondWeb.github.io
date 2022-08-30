@@ -110,7 +110,7 @@ nav ul li:nth-child(3) {
   border: 0;
 }
 
-.btn__yellow span {
+.btn__yellow a {
   font-size: 20px;
   font-weight: 500;
   color: #fff;
@@ -129,6 +129,10 @@ nav ul li a:after {
 
 nav ul li a:hover:after {
   width: 100%;
+}
+
+.yellow__btn:hover:after {
+  width: 0;
 }
 
 /* nav ul li a:hover {
@@ -166,6 +170,7 @@ nav ul li a:hover:after {
 }
 
 .hero__btn {
+  display: inline-block;
   margin-top: 57px;
   padding: 20px 39px;
   border-radius: 4px;
@@ -176,7 +181,7 @@ nav ul li a:hover:after {
   font-weight: 500;
 }
 
-button.hero__btn:hover {
+.hero__btn:hover {
   box-shadow: 0 0 30px 0 rgba(30, 136, 245, 0.9);
 }
 
@@ -278,6 +283,26 @@ button.hero__btn:hover {
 
 */
 
+.plus__icon {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle__yellow {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 0 rgba(255, 204, 1, 0.4);
+  background-color: #ffcc01;
+  position: absolute;
+  right: 10px;
+}
+
 .dotted__rectangle {
   display: inline-block;
   border: 4px dotted #e8edf2;
@@ -332,6 +357,7 @@ button.hero__btn:hover {
   border-radius: 50%;
   background-color: #1e88f5;
   margin-top: 29px;
+  position: relative;
 }
 
 .text__blue {
@@ -341,15 +367,13 @@ button.hero__btn:hover {
 }
 
 .img__icon {
-  display: inline-block;
-  width: 60px;
   height: 60px;
-  vertical-align: middle;
-}
-
-.img__span {
-  display: inline-block;
-  line-height: 140px;
+  width: 60px;
+  /* line-height: 140px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .circle__grey {
@@ -359,6 +383,7 @@ button.hero__btn:hover {
   border-radius: 50%;
   background-color: #f4f8fc;
   margin-top: 29px;
+  position: relative;
 }
 
 .text__grey {
@@ -389,12 +414,6 @@ button.hero__btn:hover {
 
 /* Above that */
 
-.middle {
-  width: 100%;
-  margin-top: 173px;
-  position: relative;
-}
-
 .middle__img {
   background-image: url(https://i.ibb.co/KwN2hN7/jonathan-kemper-2-V50etzdo-Xc-unsplash.jpg);
 
@@ -402,6 +421,98 @@ button.hero__btn:hover {
   background-position: bottom;
   height: 630px;
   width: 100%;
+  margin-top: 120px;
+  z-index: -1;
+}
+
+.middle {
+  width: 1300px;
+  font-size: 0;
+  margin: 0 auto;
+}
+
+.middle__left {
+  display: inline-block;
+  width: 60%;
+  height: 630px;
+  position: relative;
+}
+
+.left__description {
+  text-align: justify;
+  width: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left__text {
+  font-size: 46px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.left__btn {
+  text-align: center;
+  width: 337px;
+  height: 64px;
+  padding: 20px 39px;
+  border-radius: 4px;
+
+  background-color: #ffcc01;
+  display: inline-block;
+  color: #fff;
+  margin-top: 20px;
+  transition: 0.4s;
+}
+
+.left__btn:hover {
+  box-shadow: 0 0 20px 0 rgba(254, 203, 1, 0.4);
+}
+
+.btn__text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.middle__right {
+  display: inline-block;
+  width: 40%;
+  position: relative;
+  height: 630px;
+}
+
+.right__row {
+  font-size: 20px;
+  font-weight: 300;
+  background-color: #fff;
+  margin-bottom: 25px;
+  padding: 45px 59px 45px 49px;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 10px rgba(13, 37, 62, 0.1);
+}
+
+.right__description {
+  position: absolute;
+  top: -5%;
+}
+
+.right__row span {
+  font-size: 28px;
+  font-weight: 300;
+  padding-bottom: 15px;
+  display: inline-block;
+}
+
+/* .middle {
+  width: 1300px;
+  margin: 173px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .middle__description {
@@ -414,19 +525,16 @@ button.hero__btn:hover {
 }
 
 .middle__p {
-  width: 56%;
+  width: 54%;
   text-align: center;
   display: inline-block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .middle__right {
-  width: 42%;
+  width: 44%;
   float: right;
   position: absolute;
-  top: -8%;
+  top: -22%;
   right: 0;
 }
 
@@ -450,7 +558,7 @@ button.hero__btn:hover {
   box-shadow: 0 0 60px 10px rgba(13, 37, 62, 0.1);
   margin-bottom: 20px;
   margin-right: 20px;
-}
+} */
 
 .bottom {
   width: 1000px;
@@ -649,16 +757,20 @@ footer {
   margin-right: 70px;
 }
 
-.footer__text:nth-child(5) {
-  margin-right: 0;
-}
-
-footer span a {
+.footer__text li a {
+  color: #0d253e;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
   opacity: 0.4;
   transition: 0.4s;
 }
 
-footer span a:hover {
+.footer__text:nth-child(5) {
+  margin-right: 0;
+}
+
+.footer__text li a:hover {
   opacity: 0.9;
   text-decoration: underline;
   color: #0d253e;
@@ -678,10 +790,12 @@ footer span a:hover {
 .footer__logo a {
   opacity: 0.6;
   font-weight: 400;
+  transition: 0.4s;
 }
 
 .footer__logo a:hover {
   color: #ffcc01;
   opacity: 1;
   font-weight: bold;
+  text-decoration: underline;
 }
